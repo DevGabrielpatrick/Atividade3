@@ -2,12 +2,12 @@
 #include <locale.h>
 
 int main() {
-    // Configura o locale para Português do Brasil
+
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
     float nota1, nota2, media;
 
-    // Leitura da 1ª nota com validação
+
     do {
         printf("Digite a 1ª nota (0 a 10): ");
         scanf("%f", &nota1);
@@ -16,7 +16,7 @@ int main() {
         }
     } while (nota1 < 0 || nota1 > 10);
 
-    // Leitura da 2ª nota com validação
+    
     do {
         printf("Digite a 2ª nota (0 a 10): ");
         scanf("%f", &nota2);
@@ -25,10 +25,10 @@ int main() {
         }
     } while (nota2 < 0 || nota2 > 10);
 
-    // Cálculo da média
+   
     media = (nota1 + nota2) / 2;
 
-    // Impressão da média com configuração local aplicada
+
     printf("A média do aluno é: %.2f\n", media);
 
     return 0;
